@@ -124,6 +124,10 @@ height: 100%;
   background-repeat: no-repeat;
 }
 
+#bg-tablet{
+  display: none;
+}
+
 ol,
 ul {
   list-style: none;
@@ -663,9 +667,136 @@ margin: 10px 15px;
     padding-bottom: 20px;
     border-bottom: #FFFFFF 0.25em solid;
 }
-  
-  
-  #explore {
-    border: 1px red solid;
+  .content{
+    top: 30vw;
+  } 
+
+  #header-destination {
+    top: 25vw;
   }
+  .destinations{
+    position: relative;
+    top: 30vw;
+  }
+  #content{
+    top: 32vw;
+  }
+  .break-line{
+    top: 32vw;
+  }
+  .infos{
+    top: 32vw;
+  }
+  .crew{
+    position: relative;
+    top: 20vw;
+  }
+  #crew-info{
+    position: relative;
+    top: 20vw;
+  }
+  .tech{
+    position: relative;
+    top: 15vw;
+  }
+  #tech-info{
+    position: relative;
+    top: 15vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #bg-mobile {
+    display: none;
+  }
+  #bg-tablet {
+    display: block;
+    position: absolute;
+width: 100%;
+height: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  .menu-items {
+    padding-left: 40px;
+    
+  }
+  h1{
+    font-size: 17vw;
+  }
+  #explore{
+    margin-top: -55px;
+    position: relative;
+    font-size: 32px;
+    left: 40px;
+    width: 30vw;
+    height: 30vw;
+  }
+  #header-destination h2{
+    position: relative;
+    left: -23vw;
+    font-size: 20px;
+  }
+  #header-destination img{
+    width: 40vw;
+    height: 40vw;
+  }
+  .destinations{
+    top: 23vw;
+  }
+  .destinations a{
+    font-size: 16px;
+  }
+  #content{
+    top: 28vw;
+  }
+  #content h1{
+    font-size: 70px;
+  }
+  .break-line{
+    top: 28vw;
+  }
+  .infos{
+    display: flex;
+    top: 30vw;
+  }
+  .KM{
+    position: relative;
+    left: 20vw;
+  }
+  .time{
+    position: relative;
+    left: 40vw;
+  }
+  #crew-image{
+    position: absolute;
+    left: 100px;
+    top: 320px;
+    width:456px !important;
+    height: 572px !important;
+  }
+  .crew{
+    top: 65vw;
+  }
+  #crew-info h2{
+    font-size: 24px;
+  }
+  #crew-info h1{
+    font-size: 30px;
+  }
+  #crew-info p{
+    padding-top: 0px;
+  }
+  .break-line-crew{
+    display: none;
+  }
+  #tech-image{
+    width: 768px !important;
+    height: 310px !important; 
+   }
+   #tech-info h1{
+    font-size: 40px;
+   }
 }
