@@ -128,6 +128,10 @@ height: 100%;
   display: none;
 }
 
+#bg-desktop{
+  display: none;
+}
+
 ol,
 ul {
   list-style: none;
@@ -706,6 +710,9 @@ margin: 10px 15px;
 }
 
 @media screen and (min-width: 600px) {
+  #bg-desktop{
+    display: none;
+  }
   #bg-mobile {
     display: none;
   }
@@ -772,13 +779,13 @@ height: 100%;
   }
   #crew-image{
     position: absolute;
-    left: 100px;
+    left: 160px;
     top: 320px;
-    width:456px !important;
-    height: 572px !important;
+    width:400px !important;
+    height: 500px !important;
   }
   .crew{
-    top: 65vw;
+    top: 60vw;
   }
   #crew-info h2{
     font-size: 24px;
@@ -793,10 +800,260 @@ height: 100%;
     display: none;
   }
   #tech-image{
-    width: 768px !important;
+    width: 120% !important;
     height: 310px !important; 
+    left: -15px;
    }
    #tech-info h1{
     font-size: 40px;
    }
+}
+
+@media screen and (min-width: 900px) {
+  #explore{
+    width: 25vw;
+    height: 25vw;
+    left: 10vw;
+    top: -5vw;
+  }
+  .KM{
+    left: 27vw;
+  }
+  .break-line{
+    width: 93vw;
+  }
+  .crew{
+    top: 50vw;
+  }
+  #tech-image{
+    width: 120% !important;
+    height: 320px !important;
+  }
+  .tech{
+    top: 20vw;
+  }
+  #tech-info{
+    top: 20vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #bg-tablet{
+    display: none;
+  }
+  #bg-desktop{
+    display: block;
+    position: absolute;
+    width: 100%;
+height: 105%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  .navbar-container{
+    margin-top: 55px;
+    
+  }
+  .menu-items{
+    width: 800px;
+    height: 100px;
+    padding-left: 60px;
+  }
+  .current{
+    padding-bottom: 30px;
+  }
+  .menu-items span{
+    font-weight: 700;
+    display: inline;
+    padding-right: 7px;
+  }
+  .desktop-line{
+    width: 30vw;
+    height: 20px;
+    left: 180px;
+    border-bottom: 1px solid #FFFFFF;
+    opacity: 0.25;
+    position: absolute;
+    z-index: 2;
+  }
+  .content{
+    width: 455px;
+    text-align: left;
+    left: 130px;
+    top: 28vw;
+  }
+  .content h1{
+    font-size: 150px;
+  }
+  .content h2{
+    font-size: 28px;
+  }
+  .content p{
+    font-size: 18px;
+  }
+  .explore-button{
+    position: absolute;
+    left: 65vw;
+    top: 38vw;
+  }
+  #explore{
+    width: 20vw;
+    height: 20vw;
+  }
+  #header-destination{
+    position: relative;
+    left: -300px;
+    top: 200px;
+  }
+  #header-destination h2{
+    left: -10vw;
+  }
+  #header-destination img{
+    width: 30vw;
+    height: 30vw;
+    margin-top: 100px;
+  }
+  .destinations{
+    position: absolute;
+    left: 55vw;
+  }
+  #content{
+    position: absolute;
+    width: 444px;
+    left: 56vw;
+    text-align: left;
+    top: 27vw;
+  }
+  #content h1{
+    width: 333px;
+    font-size: 100px;
+  }
+  #content p{
+    font-size: 18px
+  }
+  .break-line{
+    position: absolute;
+    width: 444px;
+    left: 56vw;
+    top: 47vw;
+  }
+  .infos{
+    position: absolute;
+    left: 26vw;
+    top: 50vw;
+  }
+  .KM{
+    left: 32vw;
+  }
+  .crew{
+    left: -33vw;
+  }
+  #crew-info{
+    width: 444px;
+    text-align: left;
+    left: 12vw;
+    top: 18vw;
+  }
+  #crew-info h1{
+    font-size: 56px;
+    width: 700px;
+  }
+  #crew-info h2{
+    font-size: 32px;
+    left: 5px;
+    padding-bottom: 10px;
+  }
+  #crew-info p{
+    font-size: 18px;
+    left: -15px;
+  }
+  #crew-image{
+    position: absolute;
+    left: 75vw;
+    top: -8vw;
+    width: 568px !important;
+    height: 712px !important;
+  }
+  #tech-image{
+    position: absolute;
+    width: 452px !important;
+    height: 558px !important;
+    left: 89vw;
+    top: -6vw;
+    object-fit:none;
+  }
+  .tech li{
+    position: relative;
+    display: block;
+    margin: 70px;
+    left: -37vw;
+    top: -1vw;
+  }
+  .tech a{
+    padding: 20px 28px
+  }
+  #tech-info{
+    position: absolute;
+    width: 444px;
+    text-align: left;
+    left: 25vw;
+  }
+  #tech-info h1{
+    font-size: 56px;
+    width: 700px;
+  }
+  #tech-info h2{
+    font-size: 16px;
+  }
+  #tech-info p{
+    font-size: 18px;
+    left: 0.5vw;
+    top: 1vw;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1700px) {
+  #bg-desktop{
+    display: block;
+    position: absolute;
+    width: 100%;
+height: 120%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  .logo{
+    top: 4vw;
+  }
+  .desktop-line{
+    left: 12vw;
+    width: 40vw;
+  }
+  #header-destination{
+    left: 15vw;
+    top: 10vw;
+    position: fixed;
+  }
+  #crew-image{
+    left: 40vw;
+    top: -1vw;
+  }
+  .crew{
+    top: 45vw;
+  }
+  #crew-info{
+    top: 20vw;
+  }
+  #tech-image{
+    top: -4vw;
+    left: 60vw;
+  }
+  .tech li{
+    top: 8vw;
+  }
+  #tech-info{
+    top: 27vw;
+  }
 }
